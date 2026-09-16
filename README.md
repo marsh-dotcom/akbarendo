@@ -1,4 +1,4 @@
-# Dr. Maya Laurent — Personal Website
+# Dr. Ayesha Akbar — Personal Website
 
 A polished personal website for a fictional board-certified endocrinologist. The site presents Dr. Laurent's areas of expertise, care philosophy, training, and consultation information in a calm editorial design.
 
