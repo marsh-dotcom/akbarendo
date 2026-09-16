@@ -267,7 +267,7 @@ function HomePage() {
         </div>
         <div className="contact-actions">
           <p>Start a conversation about personalized endocrine and hormone care designed around your complete health story.</p>
-          <a className="button button-light" href="mailto:hello@drayeshaakbar.com">
+          <a className="button button-light" href="tel:+18154647212">
             Request a consultation <ArrowUpRight size={17} />
           </a>
           <span>For medical emergencies, please call 911.</span>
