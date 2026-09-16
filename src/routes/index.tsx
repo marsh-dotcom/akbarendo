@@ -266,7 +266,16 @@ function HomePage() {
           <h2>Ready for care that connects the dots?</h2>
         </div>
         <div className="contact-actions">
-          <p>10181 Lincoln Highway, Frankfort, IL 60423</p>
+          <p>
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=10181+Lincoln+Highway,+Frankfort,+IL+60423" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              10181 Lincoln Highway, Frankfort, IL 60423
+            </a>
+          </p>
           <p>Start a conversation about personalized endocrine and hormone care designed around your complete health story.</p>
           <a className="button button-light" href="tel:+18154647212">
             Request a consultation <ArrowUpRight size={17} />
