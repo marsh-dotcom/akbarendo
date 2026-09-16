@@ -271,7 +271,8 @@ function HomePage() {
               href="https://www.google.com/maps/search/?api=1&query=10181+Lincoln+Highway,+Frankfort,+IL+60423" 
               target="_blank" 
               rel="noopener noreferrer"
-              style={{ textDecoration: 'underline' }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
             >
               10181 Lincoln Highway, Frankfort, IL 60423
             </a>
