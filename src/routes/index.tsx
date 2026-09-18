@@ -247,17 +247,18 @@ function HomePage() {
             health, diabetes, weight, menopause, bone health, sleep, and mood.
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-          {/* Circle Badge */}
-          <div className="stat-circle">
-            26
-          </div>
-          
-          {/* Text block grouped together so wrapping stays aligned */}
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <p style={{ margin: 0, textTransform: 'uppercase' }}>
-              Years of experience with patients and whole-person endocrine care
-            </p>
-          </div>
+            {/* Circle Badge */}
+            <div className="stat-circle">
+              26
+            </div>
+            
+            {/* Text block grouped together so wrapping stays aligned */}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <p style={{ margin: 0, textTransform: 'uppercase' }}>
+                Years of experience with patients and whole-person endocrine care
+              </p>
+            </div>
+            </div>
           </div>
 
       <section className="credentials" aria-label="Care experience and approach">
