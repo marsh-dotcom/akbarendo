@@ -53,7 +53,7 @@ const specialties = [
   },
   {
     number: '05',
-    icon: Activity,
+    icon: Activity, // Make sure to import { Activity } from 'lucide-react' at the top
     title: 'Weight loss',
     description: 'Comprehensive programs tailored to support healthy, sustainable weight management.',
     detail: 'Guided, sustainable progress.',
@@ -174,8 +174,8 @@ function HomePage() {
         <span>Long-term partnership</span>
       </section>
 
-      <section id="expertise">
-        <div className="section-heading">
+    <section id="expertise">
+      <div className="section-heading">
           <p className="eyebrow"><span /> Areas of focus</p>
           <h2>Complex symptoms,<br /><em>connected thoughtfully.</em></h2>
           <p>
@@ -246,19 +246,7 @@ function HomePage() {
             Together, we look beyond isolated results to understand patterns across thyroid
             health, diabetes, weight, menopause, bone health, sleep, and mood.
           </p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-            {/* Circle Badge */}
-            <div className="stat-circle">
-              26
-            </div>
-            
-            {/* Text block grouped together so wrapping stays aligned */}
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <p style={{ margin: 0, textTransform: 'uppercase' }}>
-                Years of experience with patients and whole-person endocrine care
-              </p>
-            </div>
-          </div>
+          <div className="certification"><span>26</span> Years of experience with patients and whole-person endocrine care</div>
         </div>
       </section>
 
