@@ -204,17 +204,14 @@ function HomePage() {
       </section>
 
       <section className="approach" id="approach">
-        <div className="approach-art" aria-hidden="true">
-          <div className="art-ring ring-a" />
-          <div className="art-ring ring-b" />
-          <div className="art-core">
-            <Brain size={52} strokeWidth={1.15} />
-          </div>
-          <p>science</p>
-          <p>story</p>
-          <p>strategy</p>
+        <div className="approach-art">
+          <img 
+            src="/aakbarhead.jpg" 
+            alt="Dr. Ayesha Akbar" 
+            className="approach-image" 
+          />
         </div>
-
+      
         <div className="approach-copy">
           <p className="eyebrow light"><span /> My approach</p>
           <h2>Traditional endocrinology, <em>expanded by function.</em></h2>
