@@ -53,7 +53,7 @@ const specialties = [
   },
   {
     number: '05',
-    icon: Activity, // Make sure to import { Activity } from 'lucide-react' at the top
+    icon: Activity,
     title: 'Weight loss',
     description: 'Comprehensive programs tailored to support healthy, sustainable weight management.',
     detail: 'Guided, sustainable progress.',
@@ -174,8 +174,8 @@ function HomePage() {
         <span>Long-term partnership</span>
       </section>
 
-    <section id="expertise">
-      <div className="section-heading">
+      <section id="expertise">
+        <div className="section-heading">
           <p className="eyebrow"><span /> Areas of focus</p>
           <h2>Complex symptoms,<br /><em>connected thoughtfully.</em></h2>
           <p>
@@ -258,8 +258,9 @@ function HomePage() {
                 Years of experience with patients and whole-person endocrine care
               </p>
             </div>
-            </div>
           </div>
+        </div>
+      </section>
 
       <section className="credentials" aria-label="Care experience and approach">
         {careHighlights.map(([label, title, place]) => (
