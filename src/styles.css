@@ -151,6 +151,23 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
 
 .approach { display: grid; grid-template-columns: 48% 52%; min-height: 650px; background: var(--ink); color: var(--paper); }
 .approach-art { position: relative; display: grid; place-items: center; overflow: hidden; background: #d9c6e8; color: var(--ink); }
+.approach-image {
+  .square-image {
+  /* 1. Forces the image into a perfect square */
+  aspect-ratio: 1 / 1;
+  width: 300px; /* Set your desired size here */
+  
+  /* 2. Prevents stretching or distortion */
+  object-fit: cover; 
+  
+  /* 3. Rounds the corners */
+  border-radius: 12px; /* Adjust for more or less rounding */
+  
+  /* 4. Adds space from every side */
+  margin: 15px; /* Use 'margin' for space *outside* the image */
+}
+
+}
 .art-ring { position: absolute; border: 1px solid rgba(44,22,61,.3); border-radius: 50%; }
 .ring-a { width: 470px; height: 470px; }
 .ring-b { width: 300px; height: 300px; }
