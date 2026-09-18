@@ -182,9 +182,10 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   display: block;
 
   /* CSS-Only Scroll-Driven Animation */
-  animation: approachFadeIn linear forwards;
+  /* Changed 'linear' to a sharp ease-in bezier curve */
+  animation: approachFadeIn cubic-bezier(0.85, 0, 0.95, 0.15) forwards;
   animation-timeline: view();
-  animation-range: entry 1% cover 50%;
+  animation-range: entry 1% cover 30%;
 }
 
 /* Triggered when visible in viewport */
