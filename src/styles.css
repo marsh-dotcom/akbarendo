@@ -184,7 +184,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   /* CSS-Only Scroll-Driven Animation */
   animation: approachFadeIn linear forwards;
   animation-timeline: view();
-  animation-range: entry 5% cover 75%;
+  animation-range: entry 1% cover 50%;
 }
 
 /* Triggered when visible in viewport */
