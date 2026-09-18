@@ -174,27 +174,34 @@ function HomePage() {
         <span>Long-term partnership</span>
       </section>
 
-            <section id="expertise">
-          <div className="section-heading">
-            {/* Image added above the eyebrow/heading */}
-            <img 
-              src="/ayeshaakbarpic.jpg" 
-              alt="Endocrine health care" 
-              className="heading-image" 
-            />
-        
-            <p className="eyebrow"><span /> Areas of focus</p>
-            <h2>Complex symptoms,<br /><em>connected thoughtfully.</em></h2>
-            <p>
-              Endocrine conditions rarely fit into neat boxes. Your symptoms, labs, history,
-              sleep, mood, and daily life all belong in the conversation.
-            </p>
-          </div>
-        
-          <div className="specialty-list">
-            {/* specialties loop ... */}
-          </div>
-        </section>
+                <section id="expertise">
+      <div className="section-heading">
+          <p className="eyebrow"><span /> Areas of focus</p>
+          <h2>Complex symptoms,<br /><em>connected thoughtfully.</em></h2>
+          <p>
+            Endocrine conditions rarely fit into neat boxes. Your symptoms, labs, history,
+            sleep, mood, and daily life all belong in the conversation.
+          </p>
+        </div>
+
+        <div className="specialty-list">
+          {specialties.map((specialty) => {
+            const Icon = specialty.icon
+            return (
+              <article className="specialty-row" key={specialty.title}>
+                <span className="specialty-number">{specialty.number}</span>
+                <div className="specialty-icon"><Icon size={25} strokeWidth={1.5} /></div>
+                <div>
+                  <h3>{specialty.title}</h3>
+                  <p>{specialty.description}</p>
+                </div>
+                <p className="specialty-detail">{specialty.detail}</p>
+                <ArrowUpRight className="specialty-arrow" size={22} />
+              </article>
+            )
+          })}
+        </div>
+      </section>
 
       <section className="approach" id="approach">
         <div className="approach-art" aria-hidden="true">
