@@ -181,10 +181,10 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   border-radius: 24px;
   display: block;
 
-  /* Hidden state before scrolling into view */
-  opacity: 0;
-  transform: translateY(25px);
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  /* CSS-Only Scroll-Driven Animation */
+  animation: approachFadeIn linear forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
 }
 
 /* Triggered when visible in viewport */
