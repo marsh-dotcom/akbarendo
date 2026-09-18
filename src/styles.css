@@ -128,6 +128,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   top: 120px;
   align-self: flex-start;
   width: 420px; /* INCREASE to shift line RIGHT, DECREASE to shift line LEFT (was 350px) */
+  padding-top: 1rem; /* ADD THIS to create space above the text */
   padding-right: 3.5rem; /* Adds breathing room between the left text and the divider line */
   flex-shrink: 0;
   background-color: var(--paper); 
