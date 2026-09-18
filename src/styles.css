@@ -159,11 +159,12 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   place-items: center;
   overflow: hidden;
   background: #d9c6e8;
+  padding: 3rem;
 }
 
 .approach-image {
   width: 100%;
-  max-width: 400px;     /* Limits how big the image can grow */
+  max-width: 800px;     /* Limits how big the image can grow */
   aspect-ratio: 4 / 5;  /* Forces a perfect square */
   object-fit: cover;    /* Prevents image stretching */
   border-radius: 24px;  /* Rounds the corners */
