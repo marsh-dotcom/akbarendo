@@ -159,7 +159,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   place-items: center;
   overflow: hidden;
   background: #d9c6e8;
-  padding: 3rem;
+  padding: 6rem;
 }
 
 .approach-image {
