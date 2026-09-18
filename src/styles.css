@@ -117,21 +117,22 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
 .section { padding: 120px 7vw; }
 #expertise {
   display: flex;
-  gap: 5rem;
+  gap: 3rem; /* Reduced gap between the line and the right list */
   position: relative;
   padding-right: 4.5rem;
   padding-left: 1.5rem;
 }
+
 .section-heading {
   position: sticky;
   top: 120px;
   align-self: flex-start;
-  width: 350px;
+  width: 420px; /* INCREASE to shift line RIGHT, DECREASE to shift line LEFT (was 350px) */
+  padding-right: 3.5rem; /* Adds breathing room between the left text and the divider line */
   flex-shrink: 0;
   background-color: var(--paper); 
   z-index: 10;
   border-right: 1px solid var(--line);
-}
 .specialty-list {
   flex: 1;
   padding-left: -1rem;
