@@ -246,9 +246,19 @@ function HomePage() {
             Together, we look beyond isolated results to understand patterns across thyroid
             health, diabetes, weight, menopause, bone health, sleep, and mood.
           </p>
-          <div className="certification"><span>26</span> Years of experience with patients<br />and whole-person endocrine care</div>
-        </div>
-      </section>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+          {/* Circle Badge */}
+          <div className="stat-circle">
+            26
+          </div>
+          
+          {/* Text block grouped together so wrapping stays aligned */}
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <p style={{ margin: 0, textTransform: 'uppercase' }}>
+              Years of experience with patients and whole-person endocrine care
+            </p>
+          </div>
+          </div>
 
       <section className="credentials" aria-label="Care experience and approach">
         {careHighlights.map(([label, title, place]) => (
