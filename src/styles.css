@@ -1,9 +1,9 @@
 @import "tailwindcss" source("../");
 /* 1. Define the fade-in keyframes */
-@keyframes fadeIn {
+@keyframes approachFadeIn {
   from {
     opacity: 0;
-    transform: translateY(15px);
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
@@ -168,7 +168,7 @@ h1 em, h2 em { color: var(--clay); font-weight: 400; }
   position: relative;
   display: grid;
   place-items: center;
-  overflow: hidden;
+  overflow: visible; /* Changed from hidden so view() tracks window scroll */
   background: #d9c6e8;
   padding: 6rem;
 }
